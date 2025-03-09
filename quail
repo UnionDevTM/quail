@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ферма перепелов</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(to right, #8a6635, #866434);
+            height: 100vh; /* Чтобы градиент заполнил весь экран */
+            margin: 0;
+        }
+
+        /* Фон в шапке */
+        header {
+            background-image: url('images/bg1.jpg'); /* Путь к изображению */
+            background-size: cover; /* Покрытие всей области */
+            background-position: center; /* Центрирование */
+            background-repeat: no-repeat; /* Отключаем повторение */
+            min-height: 100vh; /* Высота на весь экран, адаптируется по содержимому */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Стили для изображений */
+        .card-img-top {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+        }
+
+        .container {
+            max-width: 1200px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Главный экран -->
+    <header>
+        <a href="#products" class="btn btn-primary btn-lg">Посмотреть продукцию</a>
+    </header>
+
+    <!-- О нас -->
+    <section class="container my-5 text-center">
+        <h2>О нашей ферме</h2>
+        <p>Мы выращиваем перепелов в натуральных условиях без химии и добавок.</p>
+    </section>
+
+    <!-- Продукция -->
+    <section id="products" class="container my-5">
+        <h1 class="text-center">Наша продукция</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/яйца.jpg" class="card-img-top" alt="Перепелиные яйца">
+                    <div class="card-body">
+                        <h4 class="text-center">Перепелиные яйца</h4>
+                        <p class="card-text"><strong>От 90 рублей за десяток </strong></p>
+                        <a href="#contact" class="btn btn-success">Заказать</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/мясо.jpg" class="card-img-top" alt="Мясо перепелов">
+                    <div class="card-body">
+                        <h4 class="text-center">Мясо перепелов</h4>
+                        <p class="card-text"><strong>От 900 рублей за килограмм.</strong></p>
+                        <a href="#contact" class="btn btn-success">Заказать</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/живые.jpg" class="card-img-top" alt="Живые перепела">
+                    <div class="card-body">
+                        <h4 class="text-center">Живые перепела</h4>
+                        <p class="card-text"><strong>Временно не производим продажу.</strong></p>
+                        <a href="#contact" class="btn btn-success">Заказать</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact" class="bg-light text-center p-5">
+        <h2>Свяжитесь с нами</h2>
+        <p>Закажите продукцию прямо сейчас</p>
+        <a href="https://t.me/unionstreamer" class="btn btn-primary">Написать в Telegram</a>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
